@@ -1,0 +1,80 @@
+.vdo-grid{
+    background-color: rgb(249, 249, 249);;
+    margin-left: 70px;
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 0px;
+    padding: 25px 25px;
+  }
+ 
+  @media (min-width: 870px) and (max-width: 1124px) {
+    .vdo-grid {
+        grid-template-columns: 1fr 1fr 1fr !important;
+    }
+  }
+
+  @media (min-width: 1125px) {
+    .vdo-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+    }
+  }
+
+
+  .vdo-card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .thumbnail img{
+    width: 100%;
+  }
+  .thumbnail{
+    position: relative;
+  }
+
+  .duration{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80%;
+    right: 8px ;
+    background-color: black;
+    height: 20px;
+    width: 35px;
+    border-radius: 2px;
+  }
+  
+  .duration p{
+    font-size: 12px;
+    color: white;
+  }
+
+  .pfp img{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-top: 10px;
+  }
+  .vdo-content{
+    display: flex;
+    
+  }
+  .vdo-details{
+    padding: 10px;
+    
+  }
+  .vdo-title{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  .channel-name,
+  .views{
+    font-size: 12px;
+    color: rgb(112, 106, 106);
+    margin-bottom: 5px;
+  }
